@@ -1,5 +1,6 @@
 package basicsyntax
 
+import java.awt.geom.NoninvertibleTransformException
 import kotlin.math.PI
 
 fun main() {
@@ -19,7 +20,7 @@ fun main() {
 
     var value : Double = 28.0
     value *= PI
-    println(String.format("%.4f", value))
+    println(String.format("number: %f", value))
     println(value.div(2.0).plus(0.03))
 
     val num2 = -0.000122
@@ -65,5 +66,14 @@ fun main() {
     lastName = null
     println(lastName?.length)
     println("hello")
+
+    //dzieki !!, jesli lastName bedzie null to poleci wyjatek
+    lastName!!
+    println("hello")
+
+    //KONWENCJE KODOWANIA
+    //      https://kotlinlang.org/docs/coding-conventions.html
+
+
 
 }
