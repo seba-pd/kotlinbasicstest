@@ -10,7 +10,7 @@ fun main() {
     val employeeManager = EmployeeManagerImpl()
     employeeManager.addEmployee(emplyee)
 
-    var result : String = employeeManager.employeeToString()
+    var result : List<String> = employeeManager.employeeToString()
     println(result)
 
 }

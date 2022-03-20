@@ -7,8 +7,8 @@ class EmployeeManagerImpl : EmployeeManager {
         employeeList.add(employee)
     }
 
-    override fun employeeToString(): String {
-       return employeeList.map {it -> it.toString() }.toString()
+    override fun employeeToString(): List<String> {
+       return employeeList.map {it -> it.toString() }
     }
 
     override fun salarySum(list: MutableList<Employee>): Int {
